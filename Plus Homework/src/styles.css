@@ -1,0 +1,171 @@
+.container {
+  border: solid 1px black;
+  font-family: "Rubik", sans-serif;
+  max-width: 650px;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  font-size: 55px;
+  line-height: 2;
+  margin-top: 20px;
+  background-color: #fbf8cc;
+  padding-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* ------------ search bar styling ----------------- */
+.searchBar {
+  background-color: #fde4cf;
+  line-height: 2;
+  padding: 10px;
+}
+.charlotte,
+.portland,
+.houston {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: all 200ms ease-in-out;
+  padding-right: 10px;
+}
+.charlotte:hover {
+  font-size: 19px;
+}
+.portland:hover {
+  font-size: 19px;
+}
+.houston:hover {
+  font-size: 19px;
+}
+
+/* ------------  city styling ----------------- */
+.city {
+  background-color: #ffcfd2;
+  text-align: center;
+}
+#city,
+#date {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+#currentTemp,
+#currentWeather {
+  padding-bottom: 10px;
+}
+#fToC {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms ease-in-out;
+}
+#fToC:hover {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* ----------------- current weather ----------*/
+.current {
+  background-color: #f1c0e8;
+  text-align: center;
+  line-height: 2;
+}
+#icon {
+  font-size: 65px;
+}
+#currentCondition,
+#day2Condition,
+#day3Condition,
+#day4Condition,
+#day5Condition,
+#day6Condition,
+#day7Condition {
+  font-family: "Jua", sans-serif;
+  font-size: 50px;
+  line-height: 1;
+}
+#temps {
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 2;
+  padding-left: 0;
+}
+#goldHour {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+  padding-right: 10px;
+}
+/* ------------ future styling ----------------- */
+.days {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#day2 {
+  background-color: #cfbaf0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#day3 {
+  background-color: #a3c4f3;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#day4 {
+  background-color: #90dbf4;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#day5 {
+  background-color: #8eecf5;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#day6 {
+  background-color: #98f5e1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#day7 {
+  background-color: #b9fbc0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
