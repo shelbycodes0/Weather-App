@@ -171,3 +171,9 @@ h1 {
   display: none;
   overflow: hidden;
 }
+
+/* ---------------FOOTER------------------------------ */
+footer {
+  text-align: center;
+  font-family: monospace;
+}
