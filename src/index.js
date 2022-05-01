@@ -5,13 +5,16 @@ function changeCity(event) {
   let city = document.querySelector("#city");
   let searchCity = `${newCity.value}`;
   city.innerHTML = searchCity;
-  axios.get(`${apiCityUrl}&appid=${apiKey}&units=imperial`);
+  let apiKey2 = "35fef657ca97af5d0a6b09b7b5078d4d";
+  let cityCode2 = "Charlotte";
+  let apiCityUrl2 = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}&units=imperial`;
+
+  axios.get(apiCityUrl2).then(showTemperature);
 }
 
 let apiKey = "35fef657ca97af5d0a6b09b7b5078d4d";
 let cityCode = "Charlotte";
-let apiCityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityCode}`;
-let apiLLUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=35.2271&lon=-80.8431&limit=1`;
+let apiCityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityCode}&appid=${apiKey}&units=imperial`;
 
 function showTemperature(response) {
   console.log(response);
@@ -38,7 +41,25 @@ function showTemperature(response) {
   ).toLocaleTimeString();
 }
 
-axios.get(`${apiCityUrl}&appid=${apiKey}&units=imperial`).then(showTemperature);
+function showHouston(event) {
+  event.preventDefault();
+  let houstonApi = `https://api.openweathermap.org/data/2.5/weather?q=Houston&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
+  axios.get(houstonApi).then(showTemperature);
+}
+
+function showPortland(event) {
+  event.preventDefault();
+  let portlandApi = `https://api.openweathermap.org/data/2.5/weather?q=Portland&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
+  axios.get(portlandApi).then(showTemperature);
+}
+
+function showCharlotte(event) {
+  event.preventDefault();
+  let charlotteApi = `https://api.openweathermap.org/data/2.5/weather?q=Charlotte&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
+  axios.get(charlotteApi).then(showTemperature);
+}
+
+axios.get(`${apiCityUrl}`).then(showTemperature);
 
 // // ****************************************************//
 
@@ -71,6 +92,15 @@ dayTime.innerHTML = `${currentDay}, ${currentTime}`;
 
 let form = document.querySelector("#searchEngine");
 form.addEventListener("submit", changeCity);
+
+let houston = document.querySelector("#htx");
+houston.addEventListener("click", showHouston);
+
+let portland = document.querySelector("#pdx");
+portland.addEventListener("click", showPortland);
+
+let goHome = document.querySelector("#clt");
+goHome.addEventListener("click", showCharlotte);
 
 // // ****************************************************************** //
 
