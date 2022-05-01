@@ -13,25 +13,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jua&family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Jua&family=Rubik&display=swap" rel="stylesheet">
+  </head> 
   <body>
     <br /><br />
     <div class="container">
@@ -77,148 +62,130 @@
       <!-- *********************** current weather section -->
       <section class="current">
         <div class="row" id="temps">
-          <div class="col-3">
-            <strong>High:</strong> 87° <br /><strong>Low:</strong>
-            63°<br /><strong>Rain?</strong> 7%
+          <div class="col-4">
+            <strong>High: </strong><span id="highTemp"> 87</span>°F<br />
+            <strong>Low: </strong><span id="lowTemp">63</span>°F<br />
+            <strong>Humidity: </strong><span id="humidity"> 7</span>%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rr-sun"></i></div>
-            <div class="col-4"><span id="currentCondition"> Sunny</span>
+          <div class="col-4" id="icon">
+            ☔ <br />
+            <span id="currentCondition"> condition</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
-            6:44am <br />
-            <i class="fi fi-rr-sunset"></i> 8:02pm
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
+            <span id="sunUp">6:44am</span> <br />🌞⬇
+             <span id="sunDown">8:02pm</span>
           </div>
         </div>
       </section>
       <!-- ******************************future days section -->
     
-      <button class="accordion"><i class="fi fi-rs-add"></i> Tuesday</button>
+      <button class="accordion">➕ Tuesday</button>
       <div class="panel" id="day2">
         <div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 83° <br /><strong>Low:</strong>
-            48°<br /><strong>Rain?</strong> 65%
+            48°<br /><strong>Humidity: </strong> 65%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rr-thunderstorm"></i>
-            </div><div class="col-4"><span id="day2Condition"> Storm</span>
+          <div class="col-4" id="icon">
+            ⛅<br/>
+            <span id="day2Condition"> partly cloudy</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:38am <br />
-            <i class="fi fi-rr-sunset"></i> 8:04pm
+            🌞⬇ 8:04pm
           </div>
         </div>
       </div>
 
-      <button class="accordion"><i class="fi fi-rs-add"></i> Wednesday</button>
+      <button class="accordion">➕ Wednesday</button>
       <div class="panel" id="day3">
         <div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 73° <br /><strong>Low:</strong>
-            45°<br /><strong>Rain?</strong> 2%
+            45°<br /><strong>Humidity: </strong> 2%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rr-sun"></i></div>
-            <div class="col-4"><span id="day3Condition"> Sunny</span>
+          <div class="col-4" id="icon">
+            🌞<br/><span id="day3Condition"> sunny</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:36am <br />
-            <i class="fi fi-rr-sunset"></i> 8:06pm
+            🌞⬇ 8:06pm
           </div>
         </div>
       </div>
 
-      <button class="accordion"><i class="fi fi-rs-add"></i> Thursday</button>
+      <button class="accordion">➕ Thursday</button>
       <div class="panel" id="day4">
         <p><div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 74° <br /><strong>Low:</strong>
-            48°<br /><strong>Rain?</strong> 1%
+            48°<br /><strong>Humidity: </strong> 1%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rr-sun"></i></div>
-            <div class="col-4"><span id="day4Condition"> Sunny</span>
+          <div class="col-4" id="icon">
+            🌞<br/><span id="day4Condition"> sunny</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:35am <br />
-            <i class="fi fi-rr-sunset"></i> 8:06pm
+            🌞⬇ 8:06pm
           </div>
         </div></p>
       </div>
 
-      <button class="accordion"><i class="fi fi-rs-add"></i> Friday</button>
+      <button class="accordion">➕ Friday</button>
       <div class="panel" id="day5">
         <div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 83° <br /><strong>Low:</strong>
-            58°<br /><strong>Rain?</strong> 1%
+            58°<br /><strong>Humidity: </strong> 1%
           </div>
-          <div class="col-2" id="icon">
-<i class="fi fi-rs-cloud-sun"></i></div>
-<div class="col-4">
-<span id="day5Condition"> Sunny</span>
+          <div class="col-4" id="icon">
+        ☔<br/>
+        <span id="day5Condition"> thunderstorm</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:34am <br />
-            <i class="fi fi-rr-sunset"></i> 8:07pm
+            🌞⬇</i> 8:07pm
           </div>
         </div>
       </div>
 
-      <button class="accordion"><i class="fi fi-rs-add"></i> Saturday</button>
+      <button class="accordion">➕ Saturday</button>
       <div class="panel" id="day6">
         <div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 83° <br /><strong>Low:</strong>
-            58°<br /><strong>Rain?</strong> 10%
+            58°<br /><strong>Humidity: </strong> 10%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rs-cloud-sun"></i></div>
-            <div class="col-4"><span id="day6Condition"> Sunny</span>
+          <div class="col-4" id="icon">
+            ⛅<br/><span id="day6Condition"> partly cloudy</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:32am <br />
-            <i class="fi fi-rr-sunset"></i> 8:08pm
+            🌞⬇ 8:08pm
           </div>
         </div>
       </div>
 
-      <button class="accordion"><i class="fi fi-rs-add"></i> Sunday</button>
+      <button class="accordion">➕ Sunday</button>
       <div class="panel" id="day7">
         <div class="row" id="temps">
-          <div class="col-3">
+          <div class="col-4">
             <strong>High:</strong> 82° <br /><strong>Low:</strong>
-            60°<br /><strong>Rain?</strong> 25%
+            60°<br /><strong>Humidity: </strong> 25%
           </div>
-          <div class="col-2" id="icon">
-            <i class="fi fi-rr-smoke"></i></div>
-            <div class="col-4"><span id="day7Condition"> Cloudy</span>
+          <div class="col-4" id="icon">
+            ⛅<br/><span id="day7Condition"> partly cloudy</span>
           </div>
-          <div class="col-3" id="goldHour">
-            <strong>Golden Hour:</strong><br /><i
-              class="fi fi-rr-sunrise-alt"
-            ></i>
+          <div class="col-4" id="goldHour">
+            <strong>Golden Hour:</strong><br />🌞⬆
             6:31am <br />
-            <i class="fi fi-rr-sunset"></i> 8:09pm
+            🌞⬇ 8:09pm
           </div>
         </div>
       </div>

@@ -71,7 +71,10 @@ h1 {
   line-height: 2;
 }
 #icon {
-  font-size: 65px;
+  padding-top: 20px;
+  font-size: 70px;
+  line-height: 0.5;
+  padding-bottom: 20px;
 }
 #currentCondition,
 #day2Condition,
@@ -80,12 +83,11 @@ h1 {
 #day5Condition,
 #day6Condition,
 #day7Condition {
-  font-family: "Jua", sans-serif;
-  font-size: 50px;
-  line-height: 1;
+  font-size: 25px;
+  font-family: "Concert One", cursive;
 }
 #temps {
-  padding-top: 40px;
+  padding-top: 20px;
   font-size: 20px;
   line-height: 2;
   padding-left: 0;
