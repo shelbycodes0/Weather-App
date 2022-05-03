@@ -42,18 +42,21 @@ function showTemperature(response) {
 }
 
 function showHouston(event) {
+  city.innerHTML = "Houston";
   event.preventDefault();
   let houstonApi = `https://api.openweathermap.org/data/2.5/weather?q=Houston&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
   axios.get(houstonApi).then(showTemperature);
 }
 
 function showPortland(event) {
+  city.innerHTML = "Portland";
   event.preventDefault();
   let portlandApi = `https://api.openweathermap.org/data/2.5/weather?q=Portland&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
   axios.get(portlandApi).then(showTemperature);
 }
 
 function showCharlotte(event) {
+  city.innerHTML = "Charlotte";
   event.preventDefault();
   let charlotteApi = `https://api.openweathermap.org/data/2.5/weather?q=Charlotte&appid=35fef657ca97af5d0a6b09b7b5078d4d&units=imperial`;
   axios.get(charlotteApi).then(showTemperature);
