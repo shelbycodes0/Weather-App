@@ -30,6 +30,9 @@ function showTemperature(response) {
   let sunDown = document.querySelector("#sunDown");
   let windSpeed = document.querySelector("#windSpeed");
   let mainIcon = document.querySelector("#mainIcon");
+
+  farenheitTemperature = `${temperature}`;
+
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = response.data.weather[0].description;
   highTemp.innerHTML = `${currentHighTemp}`;
@@ -69,9 +72,17 @@ function showCharlotte(event) {
   axios.get(charlotteApi).then(showTemperature);
 }
 
+function displayCelsius(event) {
+  event.preventDefault();
+  let celsiusTemperature = (5 * (farenheitTemperature - 32)) / 9;
+  alert(`It is currently ${Math.round(celsiusTemperature)}°C.`);
+}
+
 axios.get(`${apiCityUrl}`).then(showTemperature);
 
 // // ****************************************************//
+
+let farenheitTemperature = null;
 
 let now = new Date();
 
@@ -111,6 +122,9 @@ portland.addEventListener("click", showPortland);
 
 let goHome = document.querySelector("#clt");
 goHome.addEventListener("click", showCharlotte);
+
+let fToC = document.querySelector("#fToC");
+fToC.addEventListener("click", displayCelsius);
 
 // // ****************************************************************** //
 
