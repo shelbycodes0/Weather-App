@@ -74,13 +74,13 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            <span id="sunUp">6:44am</span> <br />🌞⬇
-             <span id="sunDown">8:02pm</span>
+            <span id="sunUp">6:44:00 AM</span> <br />🌞⬇
+             <span id="sunDown">8:02:00 PM</span>
           </div>
         </div>
       </section>
       <!-- ******************************future days section -->
-      <button class="accordion">➕ Tuesday</button>
+      <button class="accordion">➕ <span id="plus1"> . </span></button>
       <div class="panel" id="day2">
         <div class="row" id="temps">
           <div class="col-4"><br>
@@ -95,13 +95,13 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆<span id="sunUp2">
-            6:38am </span><br />
-            🌞⬇ <span id="sunDown2">8:04pm</span>
+            6:38:00 AM </span><br />
+            🌞⬇ <span id="sunDown2">8:04:00 PM</span>
           </div>
         </div>
       </div>
 
-      <button class="accordion">➕ Wednesday</button>
+      <button class="accordion">➕ <span id="plus2"> . </span></button>
       <div class="panel" id="day3">
         <div class="row" id="temps">
           <div class="col-4">
@@ -116,38 +116,39 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            <span id="sunUp3">6:36am</span> <br />
-            🌞⬇ <span id="sunDown3">8:06pm</span>
+            <span id="sunUp3">6:36:00 AM</span> <br />
+            🌞⬇ <span id="sunDown3">8:06:00 PM</span>
           </div>
         </div>
       </div>
 
-      <button class="accordion">➕ Thursday</button>
+      <button class="accordion">➕ <span id="plus3"> . </span></button>
       <div class="panel" id="day4">
         <p><div class="row" id="temps">
           <div class="col-4">
-            <br><strong>Temp: </strong><span>74 /</span><span> 48</span> °F
+            <br><strong>Temp: </strong><span id="day4High">74</span> / <span id="day4Low">48</span> °F
             <br /><strong>Wind:</strong>
-            5 mph<br /><strong>Humidity: </strong> 1%
+            <span id="day4WindSpeed">5</span>
+          mph<br /><strong>Humidity: </strong><span id="day4Humidity">1</span>%
           </div>
           <div class="col-4">
             <img src="http://openweathermap.org/img/wn/04n@2x.png" id="icon4"/><br/><span id="day4Condition">sunny</span>
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            6:35am <br />
-            🌞⬇ 8:06pm
+            <span id="sunUp4">6:35:00 AM </span> <br />
+            🌞⬇ <span id="sunDown4">8:06:00 PM</span>
           </div>
         </div></p>
       </div>
 
-      <button class="accordion">➕ Friday</button>
+      <button class="accordion">➕ <span id="plus4"> . </span></button>
       <div class="panel" id="day5">
         <div class="row" id="temps">
           <div class="col-4">
-           <br> <strong>Temp: </strong><span>83</span> / <span>58</span> °F 
-            <br /><strong>Wind:</strong>
-            5 mph<br /><strong>Humidity: </strong> 1% <br><br>
+           <br> <strong>Temp: </strong><span id="day5High">83</span> / <span id="day5Low">58</span> °F 
+            <br /><strong>Wind: </strong><span id="day5WindSpeed">5</span>
+            mph<br /><strong>Humidity: </strong><span id="day5Humidity">1</span>% <br><br>
           </div>
           <div class="col-4">
         <img src="http://openweathermap.org/img/wn/04n@2x.png" id="icon5"/><br/>
@@ -155,19 +156,19 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            6:34am <br />
-            🌞⬇</i> 8:07pm
+            <span id="sunUp5">6:35:00 AM</span><br />
+            🌞⬇ <span id="sunDown5">8:06:00 PM</span>
           </div>
         </div>
       </div>
 
-      <button class="accordion">➕ Saturday</button>
+      <button class="accordion">➕ <span id="plus5"> . </span></button>
       <div class="panel" id="day6">
         <div class="row" id="temps">
           <div class="col-4"><br>
-            <strong>Temp: </strong><span>83</span> / <span>58</span> °F
-            <br /><strong>Wind:</strong>
-            12 mph<br /><strong>Humidity: </strong> 10%
+            <strong>Temp: </strong><span id="day6High">83</span> / <span id="day6Low">58</span> °F
+            <br /><strong>Wind: </strong><span id="day6WindSpeed">5</span>
+            mph<br /><strong>Humidity: </strong><span id="day6Humidity">5</span>%
             <br><br>
           </div>
           <div class="col-4">
@@ -175,19 +176,19 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            6:32am <br />
-            🌞⬇ 8:08pm
+            <span id="sunUp6">6:35:00 AM </span><br />
+            🌞⬇ <span id="sunDown6">8:35:00 PM </span>
           </div>
         </div>
       </div>
 
-      <button class="accordion">➕ Sunday</button>
+      <button class="accordion">➕ <span id="plus6"> . </span></button>
       <div class="panel" id="day7">
         <div class="row" id="temps">
           <div class="col-4"><br>
-            <strong>Temp: </strong><span>82</span> / <span>60</span> °F
-            <br /><strong>Wind:</strong>
-            8 mph<br /><strong>Humidity: </strong> 25%
+            <strong>Temp: </strong><span id="day7High">82</span> / <span id="day7Low">60</span> °F
+            <br /><strong>Wind: </strong><span id ="day7WindSpeed">5</span>
+            mph<br /><strong>Humidity: </strong><span id="day7Humidity">5</span>%
             <br><br>
           </div>
           <div class="col-4">
@@ -195,15 +196,15 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            6:31am <br />
-            🌞⬇ 8:09pm
+            <span id="sunUp7">6:35:00 AM </span><br />
+            🌞⬇ <span id="sunDown7">8:15:00 PM </span>
           </div>
         </div>
       </div>
     </div>
     </div>
     <br/>
-    <footer><a href="#" class="fToC" id="fToC">🌡️Need °C?</a><br>🌈This Weather App was built by <a href="https://github.com/shelbycodes0/Weather-App">ShelbyCodes</a></footer>
+    <footer><a href="#" class="fToC" id="fToC">🌡️What is today's Temperature in °C?</a><br>🌈This Weather App was built by <a href="https://github.com/shelbycodes0/Weather-App">ShelbyCodes</a></footer>
     <br><br><br>
     <script src="src/index.js"></script>
     

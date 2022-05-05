@@ -48,6 +48,7 @@ h1 {
 .city {
   background-color: #ffcfd2;
   text-align: center;
+  text-transform: capitalize;
 }
 #city,
 #date {
