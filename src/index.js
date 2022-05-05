@@ -49,6 +49,70 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+
+  getForecast(response.data.coord);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+  // day 2 conditions ---------------------------------------------------------
+  let day2High = document.querySelector("#day2High");
+  let day2Low = document.querySelector("#day2Low");
+  let day2Humidity = document.querySelector("#day2Humidity");
+  let day2WindSpeed = document.querySelector("#day2WindSpeed");
+  let sunUp2 = document.querySelector("#sunUp2");
+  let sunDown2 = document.querySelector("#sunDown2");
+  let day2Condition = document.querySelector("#day2Condition");
+  let icon2 = document.querySelector("#icon2");
+
+  day2High.innerHTML = Math.round(response.data.daily[0].temp.max);
+  day2Low.innerHTML = Math.round(response.data.daily[0].temp.min);
+  day2Humidity.innerHTML = response.data.daily[0].humidity;
+  day2WindSpeed.innerHTML = response.data.daily[0].wind_speed;
+  sunUp2.innerHTML = new Date(
+    response.data.daily[0].sunrise * 1000
+  ).toLocaleTimeString();
+  sunDown2.innerHTML = new Date(
+    response.data.daily[0].sunset * 1000
+  ).toLocaleTimeString();
+  day2Condition.innerHTML = response.data.daily[0].weather[0].description;
+  icon2.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.daily[0].weather[0].icon}@2x.png`
+  );
+  // day 3 conditions ---------------------------------------------------------
+  let day3High = document.querySelector("#day3High");
+  let day3Low = document.querySelector("#day3Low");
+  let day3Humidity = document.querySelector("#day3Humidity");
+  let day3WindSpeed = document.querySelector("#day3WindSpeed");
+  let sunUp3 = document.querySelector("#sunUp3");
+  let sunDown3 = document.querySelector("#sunDown3");
+  let day3Condition = document.querySelector("#day3Condition");
+  let icon3 = document.querySelector("#icon3");
+
+  day3High.innerHTML = Math.round(response.data.daily[1].temp.max);
+  day3Low.innerHTML = Math.round(response.data.daily[1].temp.min);
+  day3Humidity.innerHTML = response.data.daily[1].humidity;
+  day3WindSpeed.innerHTML = response.data.daily[1].wind_speed;
+  sunUp3.innerHTML = new Date(
+    response.data.daily[1].sunrise * 1000
+  ).toLocaleTimeString();
+  sunDown3.innerHTML = new Date(
+    response.data.daily[1].sunset * 1000
+  ).toLocaleTimeString();
+  day3Condition.innerHTML = response.data.daily[1].weather[0].description;
+  icon3.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.daily[1].weather[0].icon}@2x.png`
+  );
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiForecastKey = "35fef657ca97af5d0a6b09b7b5078d4d";
+  let apiForecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiForecastKey}&units=imperial`;
+  console.log(apiForecastUrl);
+  axios.get(`${apiForecastUrl}`).then(displayForecast);
 }
 
 function showHouston(event) {

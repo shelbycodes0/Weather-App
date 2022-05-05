@@ -80,24 +80,23 @@
         </div>
       </section>
       <!-- ******************************future days section -->
-    
       <button class="accordion">➕ Tuesday</button>
       <div class="panel" id="day2">
         <div class="row" id="temps">
           <div class="col-4"><br>
-            <strong>Temp: </strong><span>83</span> / <span>48</span> °F
+            <strong>Temp: </strong><span id="day2High">83</span> / <span id="day2Low">48</span> °F
             <br>
-            <strong>Wind: </strong>
-            5 mph<br /><strong>Humidity: </strong> 65% <br><br>
+            <strong>Wind: </strong><span id="day2WindSpeed">
+            5</span> mph <br /><strong>Humidity: </strong><span id="day2Humidity"> 65 </span>%<br><br>
           </div>
           <div class="col-4">
             <img src="http://openweathermap.org/img/wn/04n@2x.png" id="icon2"/><br/>
             <span id="day2Condition">partly cloudy</span>
           </div>
           <div class="col-4" id="goldHour"><br>
-            <strong>Golden Hour:</strong><br />🌞⬆
-            6:38am <br />
-            🌞⬇ 8:04pm
+            <strong>Golden Hour:</strong><br />🌞⬆<span id="sunUp2">
+            6:38am </span><br />
+            🌞⬇ <span id="sunDown2">8:04pm</span>
           </div>
         </div>
       </div>
@@ -106,10 +105,10 @@
       <div class="panel" id="day3">
         <div class="row" id="temps">
           <div class="col-4">
-            <br><strong>Temp: </strong><span>73</span> / <span>45</span> °F
+            <br><strong>Temp: </strong><span id="day3High">73</span> / <span id="day3Low">45</span> °F
             <br>
-            <strong>Wind: </strong>5 mph
-            <br /><strong>Humidity: </strong> 2%
+            <strong>Wind: </strong><span id="day3WindSpeed">5</span> mph
+            <br /><strong>Humidity: </strong><span id="day3Humidity">5</span>%
             <br><br>
           </div>
           <div class="col-4">
@@ -117,8 +116,8 @@
           </div>
           <div class="col-4" id="goldHour"><br>
             <strong>Golden Hour:</strong><br />🌞⬆
-            6:36am <br />
-            🌞⬇ 8:06pm
+            <span id="sunUp3">6:36am</span> <br />
+            🌞⬇ <span id="sunDown3">8:06pm</span>
           </div>
         </div>
       </div>
@@ -201,6 +200,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <br/>
     <footer><a href="#" class="fToC" id="fToC">🌡️Need °C?</a><br>🌈This Weather App was built by <a href="https://github.com/shelbycodes0/Weather-App">ShelbyCodes</a></footer>
