@@ -7,17 +7,18 @@
 h1 {
   text-align: center;
   font-family: "Jua", sans-serif;
-  font-size: 55px;
-  line-height: 2;
+  font-size: 70px;
+  line-height: 1;
   margin-top: 20px;
   background-color: #fbf8cc;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .titleicon {
-  max-width: 60px;
+  max-width: 70px;
 }
 /* ------------ search bar styling ----------------- */
 .searchBar {
@@ -104,12 +105,21 @@ h1 {
 #temps {
   font-size: 17px;
   line-height: 2;
-  padding-left: 0;
+  padding-left: 20px;
 }
 #goldHour {
   text-align: center;
   font-size: 17px;
   line-height: 2;
+  padding-right: 20px;
+}
+
+.sunUp,
+.windy {
+  max-width: 23px;
+}
+.sunDown {
+  max-width: 25px;
 }
 /* ------------ future styling ----------------- */
 .days {
@@ -189,4 +199,10 @@ h1 {
 footer {
   text-align: center;
   font-family: monospace;
+}
+#tempIcon {
+  max-width: 25px;
+}
+#rainbow {
+  max-width: 45px;
 }
