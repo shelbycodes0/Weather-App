@@ -15,6 +15,10 @@ h1 {
   margin-bottom: 0;
   margin-top: 0;
 }
+
+.titleicon {
+  max-width: 60px;
+}
 /* ------------ search bar styling ----------------- */
 .searchBar {
   background-color: #fde4cf;
@@ -47,7 +51,7 @@ h1 {
 }
 #city,
 #date {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
 }
@@ -60,9 +64,11 @@ h1 {
   text-decoration: none;
   color: black;
   transition: all 200ms ease-in-out;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
 }
 .fToC:hover {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 /* ----------------- current weather ----------*/
@@ -71,11 +77,15 @@ h1 {
   text-align: center;
   line-height: 2;
 }
-#icon {
-  padding-top: 20px;
-  font-size: 70px;
+#mainIcon,
+#icon2,
+#icon3,
+#icon4,
+#icon5,
+#icon6,
+#icon7 {
+  min-width: 120px;
   line-height: 0.5;
-  padding-bottom: 20px;
 }
 #currentCondition,
 #day2Condition,
@@ -86,18 +96,19 @@ h1 {
 #day7Condition {
   font-size: 25px;
   font-family: "Concert One", cursive;
+  text-transform: capitalize;
+  line-height: 0.5;
+  padding-bottom: 20px;
 }
 #temps {
-  padding-top: 20px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   padding-left: 0;
 }
 #goldHour {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
-  padding-right: 10px;
 }
 /* ------------ future styling ----------------- */
 .days {

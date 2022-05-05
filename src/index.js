@@ -28,6 +28,8 @@ function showTemperature(response) {
   let humidity = document.querySelector("#humidity");
   let sunUp = document.querySelector("#sunUp");
   let sunDown = document.querySelector("#sunDown");
+  let windSpeed = document.querySelector("#windSpeed");
+  let mainIcon = document.querySelector("#mainIcon");
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = response.data.weather[0].description;
   highTemp.innerHTML = `${currentHighTemp}`;
@@ -39,6 +41,11 @@ function showTemperature(response) {
   sunDown.innerHTML = new Date(
     response.data.sys.sunset * 1000
   ).toLocaleTimeString();
+  windSpeed.innerHTML = response.data.wind.speed;
+  mainIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showHouston(event) {
