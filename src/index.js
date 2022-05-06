@@ -290,8 +290,8 @@ let currentTime = now.toLocaleTimeString();
 let currentDate = document.querySelector("#date");
 currentDate.innerHTML = `${currentMonth}/${currentNumber}/${currentYear}`;
 
-let dayTime = document.querySelector("#currentTemp");
-dayTime.innerHTML = `${currentDay}, ${currentTime}`;
+let day = document.querySelector("#currentTemp");
+day.innerHTML = `${currentDay}'s Forecast`;
 
 let form = document.querySelector("#searchEngine");
 form.addEventListener("submit", changeCity);
