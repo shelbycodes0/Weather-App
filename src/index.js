@@ -30,7 +30,7 @@ function showTemperature(response) {
   let sunDown = document.querySelector("#sunDown");
   let windSpeed = document.querySelector("#windSpeed");
   let mainIcon = document.querySelector("#mainIcon");
-
+  let timeUpdated = response.data.timezone;
   farenheitTemperature = `${temperature}`;
 
   temperatureElement.innerHTML = `${temperature}`;
@@ -65,6 +65,7 @@ function displayForecast(response) {
   let day2Condition = document.querySelector("#day2Condition");
   let icon2 = document.querySelector("#icon2");
   let plus0 = document.querySelector("#plus0");
+  let timeupdatedForecast = response.data.timezone;
 
   day2High.innerHTML = Math.round(response.data.daily[1].temp.max);
   day2Low.innerHTML = Math.round(response.data.daily[1].temp.min);
