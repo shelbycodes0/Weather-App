@@ -92,7 +92,7 @@ h1 {
 #icon5,
 #icon6,
 #icon7 {
-  min-width: 120px;
+  min-width: 160px;
   line-height: 0.5;
 }
 #currentCondition,
@@ -102,7 +102,7 @@ h1 {
 #day5Condition,
 #day6Condition,
 #day7Condition {
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Concert One", cursive;
   text-transform: capitalize;
   line-height: 0.5;

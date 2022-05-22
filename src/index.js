@@ -26,8 +26,6 @@ function showTemperature(response) {
   let lowTemp = document.querySelector("#lowTemp");
   let currentLowTemp = Math.round(response.data.main.temp_min);
   let humidity = document.querySelector("#humidity");
-  let sunUp = document.querySelector("#sunUp");
-  let sunDown = document.querySelector("#sunDown");
   let windSpeed = document.querySelector("#windSpeed");
   let mainIcon = document.querySelector("#mainIcon");
   let timeUpdated = response.data.timezone;
@@ -38,12 +36,7 @@ function showTemperature(response) {
   highTemp.innerHTML = `${currentHighTemp}`;
   lowTemp.innerHTML = `${currentLowTemp}`;
   humidity.innerHTML = response.data.main.humidity;
-  sunUp.innerHTML = new Date(
-    response.data.sys.sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown.innerHTML = new Date(
-    response.data.sys.sunset * 1000
-  ).toLocaleTimeString();
+
   windSpeed.innerHTML = response.data.wind.speed;
   mainIcon.setAttribute(
     "src",
@@ -60,8 +53,6 @@ function displayForecast(response) {
   let day2Low = document.querySelector("#day2Low");
   let day2Humidity = document.querySelector("#day2Humidity");
   let day2WindSpeed = document.querySelector("#day2WindSpeed");
-  let sunUp2 = document.querySelector("#sunUp2");
-  let sunDown2 = document.querySelector("#sunDown2");
   let day2Condition = document.querySelector("#day2Condition");
   let icon2 = document.querySelector("#icon2");
   let plus0 = document.querySelector("#plus0");
@@ -71,12 +62,6 @@ function displayForecast(response) {
   day2Low.innerHTML = Math.round(response.data.daily[1].temp.min);
   day2Humidity.innerHTML = response.data.daily[1].humidity;
   day2WindSpeed.innerHTML = response.data.daily[1].wind_speed;
-  sunUp2.innerHTML = new Date(
-    response.data.daily[1].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown2.innerHTML = new Date(
-    response.data.daily[1].sunset * 1000
-  ).toLocaleTimeString();
   day2Condition.innerHTML = response.data.daily[1].weather[0].description;
   icon2.setAttribute(
     "src",
@@ -90,8 +75,6 @@ function displayForecast(response) {
   let day3Low = document.querySelector("#day3Low");
   let day3Humidity = document.querySelector("#day3Humidity");
   let day3WindSpeed = document.querySelector("#day3WindSpeed");
-  let sunUp3 = document.querySelector("#sunUp3");
-  let sunDown3 = document.querySelector("#sunDown3");
   let day3Condition = document.querySelector("#day3Condition");
   let icon3 = document.querySelector("#icon3");
 
@@ -99,12 +82,6 @@ function displayForecast(response) {
   day3Low.innerHTML = Math.round(response.data.daily[2].temp.min);
   day3Humidity.innerHTML = response.data.daily[2].humidity;
   day3WindSpeed.innerHTML = response.data.daily[2].wind_speed;
-  sunUp3.innerHTML = new Date(
-    response.data.daily[2].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown3.innerHTML = new Date(
-    response.data.daily[2].sunset * 1000
-  ).toLocaleTimeString();
   day3Condition.innerHTML = response.data.daily[2].weather[0].description;
   icon3.setAttribute(
     "src",
@@ -118,8 +95,6 @@ function displayForecast(response) {
   let day4Low = document.querySelector("#day4Low");
   let day4Humidity = document.querySelector("#day4Humidity");
   let day4WindSpeed = document.querySelector("#day4WindSpeed");
-  let sunUp4 = document.querySelector("#sunUp4");
-  let sunDown4 = document.querySelector("#sunDown4");
   let day4Condition = document.querySelector("#day4Condition");
   let icon4 = document.querySelector("#icon4");
 
@@ -127,12 +102,6 @@ function displayForecast(response) {
   day4Low.innerHTML = Math.round(response.data.daily[3].temp.min);
   day4Humidity.innerHTML = response.data.daily[3].humidity;
   day4WindSpeed.innerHTML = response.data.daily[3].wind_speed;
-  sunUp4.innerHTML = new Date(
-    response.data.daily[3].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown4.innerHTML = new Date(
-    response.data.daily[3].sunset * 1000
-  ).toLocaleTimeString();
   day4Condition.innerHTML = response.data.daily[3].weather[0].description;
   icon4.setAttribute(
     "src",
@@ -146,8 +115,6 @@ function displayForecast(response) {
   let day5Low = document.querySelector("#day5Low");
   let day5Humidity = document.querySelector("#day5Humidity");
   let day5WindSpeed = document.querySelector("#day5WindSpeed");
-  let sunUp5 = document.querySelector("#sunUp5");
-  let sunDown5 = document.querySelector("#sunDown5");
   let day5Condition = document.querySelector("#day5Condition");
   let icon5 = document.querySelector("#icon5");
 
@@ -155,12 +122,6 @@ function displayForecast(response) {
   day5Low.innerHTML = Math.round(response.data.daily[4].temp.min);
   day5Humidity.innerHTML = response.data.daily[4].humidity;
   day5WindSpeed.innerHTML = response.data.daily[4].wind_speed;
-  sunUp5.innerHTML = new Date(
-    response.data.daily[4].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown5.innerHTML = new Date(
-    response.data.daily[4].sunset * 1000
-  ).toLocaleTimeString();
   day5Condition.innerHTML = response.data.daily[4].weather[0].description;
   icon5.setAttribute(
     "src",
@@ -174,8 +135,6 @@ function displayForecast(response) {
   let day6Low = document.querySelector("#day6Low");
   let day6Humidity = document.querySelector("#day6Humidity");
   let day6WindSpeed = document.querySelector("#day6WindSpeed");
-  let sunUp6 = document.querySelector("#sunUp6");
-  let sunDown6 = document.querySelector("#sunDown6");
   let day6Condition = document.querySelector("#day6Condition");
   let icon6 = document.querySelector("#icon6");
 
@@ -183,12 +142,6 @@ function displayForecast(response) {
   day6Low.innerHTML = Math.round(response.data.daily[5].temp.min);
   day6Humidity.innerHTML = response.data.daily[5].humidity;
   day6WindSpeed.innerHTML = response.data.daily[5].wind_speed;
-  sunUp6.innerHTML = new Date(
-    response.data.daily[5].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown6.innerHTML = new Date(
-    response.data.daily[5].sunset * 1000
-  ).toLocaleTimeString();
   day6Condition.innerHTML = response.data.daily[5].weather[0].description;
   icon6.setAttribute(
     "src",
@@ -202,8 +155,6 @@ function displayForecast(response) {
   let day7Low = document.querySelector("#day7Low");
   let day7Humidity = document.querySelector("#day7Humidity");
   let day7WindSpeed = document.querySelector("#day7WindSpeed");
-  let sunUp7 = document.querySelector("#sunUp7");
-  let sunDown7 = document.querySelector("#sunDown7");
   let day7Condition = document.querySelector("#day7Condition");
   let icon7 = document.querySelector("#icon7");
 
@@ -211,12 +162,6 @@ function displayForecast(response) {
   day7Low.innerHTML = Math.round(response.data.daily[6].temp.min);
   day7Humidity.innerHTML = response.data.daily[6].humidity;
   day7WindSpeed.innerHTML = response.data.daily[6].wind_speed;
-  sunUp7.innerHTML = new Date(
-    response.data.daily[6].sunrise * 1000
-  ).toLocaleTimeString();
-  sunDown7.innerHTML = new Date(
-    response.data.daily[6].sunset * 1000
-  ).toLocaleTimeString();
   day7Condition.innerHTML = response.data.daily[6].weather[0].description;
   icon7.setAttribute(
     "src",
