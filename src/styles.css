@@ -238,6 +238,7 @@ footer {
   box-sizing: border-box;
   font-family: monospace;
   font-size: 23px;
+  color: white;
 }
 .loader::after {
   content: "";
